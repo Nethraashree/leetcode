@@ -3,11 +3,11 @@ class Solution:
         if n <= 2:
             return n
 
-        a, b = 1, 2
+        first, second = 1, 2
 
-        for _ in range(3, n + 1):
-            c = a + b
-            a = b
-            b = c
+        for i in range(3, n + 1):
+            third = first + second
+            first = second
+            second = third
 
-        return b
+        return second
